@@ -1,3 +1,14 @@
-h1 {
-  color: blue;
-}
+//@import "../../node_modules/npm-font-open-sans/open-sans.css"; // TODO: Add this font.
+//@import "../../node_modules/typeface-montserrat/index.css"; // TODO: Add font.
+
+// Default color variables.
+// TODO: Rename colors to colors name rather than its function.
+
+$accent-color: #1dc8cd;
+$heading-color: #333333;
+$text-color: #666666;
+
+// Font variables.
+$accent-font: 'Montserrat', sans-serif;
+$heading-font: 'Montserrat', sans-serif;
+$text-font: 'Open Sans', sans-serif;
