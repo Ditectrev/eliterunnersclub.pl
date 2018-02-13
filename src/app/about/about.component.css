@@ -1,3 +1,39 @@
-
+section {
+  padding: 60px 0; }
+  section .about-img {
+    height: 510px;
+    overflow: hidden; }
+    section .about-img img {
+      margin-left: -15px;
+      max-width: 100%; }
+    @media (max-width: 768px) {
+      section .about-img {
+        height: auto; }
+        section .about-img img {
+          margin-left: 0;
+          padding-bottom: 30px; } }
+  section .content h2 {
+    color: #333333;
+    font-weight: 300;
+    font-size: 24px; }
+  section .content h3 {
+    color: #777777;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 26px; }
+  section .content p {
+    line-height: 26px; }
+    section .content p:last-child {
+      margin-bottom: 0; }
+  section .content i {
+    color: #1dc8cd;
+    font-size: 20px;
+    padding-right: 4px; }
+  section .content ul {
+    list-style: none;
+    padding: 0; }
+    section .content ul li {
+      padding-bottom: 10px; }
 
 /*# sourceMappingURL=about.component.css.map */
