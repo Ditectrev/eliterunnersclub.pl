@@ -1,0 +1,39 @@
+section {
+  background: #ffffff;
+  padding: 60px 0 0 0; }
+  section .features-img {
+    padding-top: 20px;
+    text-align: center; }
+    @media (max-width: 768px) {
+      section .features-img {
+        margin-top: -200px;
+        padding-top: 120px; } }
+    section .features-img img {
+      max-width: 100%; }
+  section .box {
+    margin-bottom: 15px;
+    text-align: center; }
+  section .icon {
+    margin-bottom: 10px; }
+    section .icon i {
+      color: #666666;
+      font-size: 40px;
+      transition: .5s; }
+      section .icon i:before {
+        background: #1dc8cd;
+        background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+        background-clip: border-box; }
+  section .title {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 15px; }
+    section .title a {
+      color: #111111; }
+  section .description {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 10px; }
+  section .section-description {
+    padding-bottom: 10px; }
+
+/*# sourceMappingURL=features.component.css.map */

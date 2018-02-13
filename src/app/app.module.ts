@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
+import { FeaturesComponent } from './features/features.component';
 
 
 @NgModule({
@@ -12,7 +13,8 @@ import { AboutComponent } from './about/about.component';
     AppComponent,
     HeaderComponent,
     IntroComponent,
-    AboutComponent
+    AboutComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule
