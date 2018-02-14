@@ -1,0 +1,44 @@
+section .features-row {
+  padding: 60px 0 30px 0; }
+section h2 {
+  color: #000000;
+  font-size: 26px;
+  font-weight: 700; }
+section h3 {
+  color: #999999;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px; }
+section p {
+  color: #777777;
+  line-height: 24px;
+  margin-bottom: 30px; }
+section i {
+  color: #666666;
+  float: left;
+  font-size: 64px;
+  line-height: 1;
+  padding: 0 15px 0 0;
+  transition: .5s; }
+  section i:before {
+    background: #1dc8cd;
+    background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+section .advanced-feature-img-right {
+  float: right;
+  max-width: 100%;
+  padding: 0 0 30px 30px; }
+section .advanced-feature-img-left {
+  float: left;
+  max-width: 100%;
+  padding: 0 30px 30px 0; }
+@media (max-width: 768px) {
+  section .advanced-feature-img-right, section .advanced-feature-img-left {
+    float: none;
+    max-width: 100%;
+    padding: 0 0 30px 0; } }
+
+/*# sourceMappingURL=advanced-features.component.css.map */

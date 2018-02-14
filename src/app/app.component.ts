@@ -7,6 +7,7 @@ import {AOS} from 'aos/dist/aos';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  // TODO: Fix AOS.
   ngOnInit() {
     AOS.init();
   }

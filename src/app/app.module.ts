@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
 import { FeaturesComponent } from './features/features.component';
+import { AdvancedFeaturesComponent } from './advanced-features/advanced-features.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { FeaturesComponent } from './features/features.component';
     HeaderComponent,
     IntroComponent,
     AboutComponent,
-    FeaturesComponent
+    FeaturesComponent,
+    AdvancedFeaturesComponent
   ],
   imports: [
     BrowserModule

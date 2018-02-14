@@ -22,7 +22,9 @@ section {
       section .icon i:before {
         background: #1dc8cd;
         background: linear-gradient(45deg, #1dc8cd 0%, #55fabe 100%);
-        background-clip: border-box; }
+        background-clip: border-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
   section .title {
     font-size: 22px;
     font-weight: 300;
