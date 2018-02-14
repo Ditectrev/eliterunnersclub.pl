@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { FeaturesComponent } from './features/features.component';
 import { AdvancedFeaturesComponent } from './advanced-features/advanced-features.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { FaqComponent } from './faq/faq.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PricingComponent } from './pricing/pricing.component';
     AboutComponent,
     FeaturesComponent,
     AdvancedFeaturesComponent,
-    PricingComponent
+    PricingComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule
