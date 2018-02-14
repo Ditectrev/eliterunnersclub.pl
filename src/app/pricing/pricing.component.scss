@@ -1,0 +1,74 @@
+@import "../../scss/variables";
+@import "../../scss/sections-header";
+
+section {
+  padding: 60px 0;
+
+  .box {
+    background: #ffffff;
+    box-shadow: 0 0 30px rgba(73,78,92,.15);
+    margin-bottom: 30px;
+    padding: 40px;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  h4 {
+    color: $accent-color;
+    font-size: 46px;
+    font-weight: 300;
+
+    sup {
+      font-size: 20px;
+      top: -20px;
+    }
+
+    span {
+      color: #bababa;
+      font-size: 20px;
+    }
+  }
+
+  ul {
+    color: #999999;
+    line-height: 20px;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+
+    li {
+      padding-bottom: 12px;
+    }
+
+    i {
+      color: $accent-color;
+      font-size: 18px;
+      padding-right: 4px;
+    }
+  }
+
+  .get-started-btn {
+    background: #515e61;
+    border-radius: 20px;
+    color: #ffffff;
+    display: inline-block;
+    font-family: $accent-font;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 6px 30px;
+    transition: none;
+  }
+
+  .featured {
+    border: 2px solid $accent-color;
+
+    .get-started-btn {
+      background: linear-gradient(45deg, #1de099, #1dc8cd);
+    }
+  }
+}
