@@ -9,6 +9,7 @@ import { FeaturesComponent } from './features/features.component';
 import { AdvancedFeaturesComponent } from './advanced-features/advanced-features.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { FaqComponent } from './faq/faq.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { FaqComponent } from './faq/faq.component';
     FeaturesComponent,
     AdvancedFeaturesComponent,
     PricingComponent,
-    FaqComponent
+    FaqComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule
