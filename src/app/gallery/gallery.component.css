@@ -1,3 +1,21 @@
+.section-header .section-title {
+  color: #111111;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center; }
+.section-header .section-description {
+  color: #777777;
+  font-style: italic;
+  padding-bottom: 40px;
+  text-align: center; }
+.section-header .section-divider {
+  background: #1dc8cd;
+  background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+  display: block;
+  height: 3px;
+  margin: 0 auto 20px;
+  width: 60px; }
+
 section {
   background: #ffffff;
   padding: 60px 0 0 0; }

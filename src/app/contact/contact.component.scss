@@ -1,0 +1,107 @@
+@import "../../scss/variables";
+@import "../../scss/sections-header";
+
+section {
+  box-shadow: 0 0 12px 0 rgba(0,0,0,.1);
+  padding: 60px 0;
+
+  .contact-about {
+    h3 {
+      color: $accent-color;
+      font-family: $accent-font;
+      font-size: 36px;
+      font-weight: 300;
+      letter-spacing: 3px;
+      line-height: 1;
+      margin: 0 0 10px 0;
+      padding: 0;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: #888888;
+      font-family: $accent-font;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+
+  .social-links {
+    padding-bottom: 20px;
+
+    a {
+      background: #ffffff;
+      border: 1px solid $accent-color;
+      border-radius: 50%;
+      color: $accent-color;
+      display: inline-block;
+      font-size: 18px;
+      height: 36px;
+      line-height: 1;
+      margin-right: 4px;
+      padding: 8px 0;
+      text-align: center;
+      transition: .3s;
+      width: 36px;
+
+      &:hover {
+        background: $accent-color;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .info {
+    color: $heading-color;
+
+    i {
+      color: $accent-color;
+      float: left;
+      font-size: 32px;
+      line-height: 1;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 28px;
+      padding: 0 0 10px 42px;
+    }
+  }
+
+  .form {
+    input, textarea {
+      border-radius: 0;
+      box-shadow: none;
+      font-size: 14px;
+
+      &.ng-invalid.ng-touched {
+        border: 1px solid red;
+      }
+    }
+
+    span {
+      &.failure {
+        display: block;
+        color: red;
+      }
+
+      &.success {
+        display: block;
+        color: green;
+      }
+    }
+
+    button[type="submit"] {
+      background: linear-gradient(45deg, #1de099, #1dc8cd);
+      border: 0;
+      border-radius: 20px;
+      color: #ffffff;
+      padding: 8px 30px;
+
+      &:hover {
+        background: linear-gradient(45deg, #1dc8cd, #1de099);
+        cursor: pointer;
+      }
+    }
+  }
+}

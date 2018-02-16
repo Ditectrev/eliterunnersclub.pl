@@ -1,0 +1,89 @@
+.section-header .section-title {
+  color: #111111;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center; }
+.section-header .section-description {
+  color: #777777;
+  font-style: italic;
+  padding-bottom: 40px;
+  text-align: center; }
+.section-header .section-divider {
+  background: #1dc8cd;
+  background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+  display: block;
+  height: 3px;
+  margin: 0 auto 20px;
+  width: 60px; }
+
+section {
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+  padding: 60px 0; }
+  section .contact-about h3 {
+    color: #1dc8cd;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    line-height: 1;
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-transform: uppercase; }
+  section .contact-about p {
+    color: #888888;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 24px; }
+  section .social-links {
+    padding-bottom: 20px; }
+    section .social-links a {
+      background: #ffffff;
+      border: 1px solid #1dc8cd;
+      border-radius: 50%;
+      color: #1dc8cd;
+      display: inline-block;
+      font-size: 18px;
+      height: 36px;
+      line-height: 1;
+      margin-right: 4px;
+      padding: 8px 0;
+      text-align: center;
+      transition: .3s;
+      width: 36px; }
+      section .social-links a:hover {
+        background: #1dc8cd;
+        color: #ffffff; }
+  section .info {
+    color: #333333; }
+    section .info i {
+      color: #1dc8cd;
+      float: left;
+      font-size: 32px;
+      line-height: 1; }
+    section .info p {
+      font-size: 14px;
+      line-height: 28px;
+      padding: 0 0 10px 42px; }
+  section .form input, section .form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px; }
+    section .form input.ng-invalid.ng-touched, section .form textarea.ng-invalid.ng-touched {
+      border: 1px solid red; }
+  section .form span.failure {
+    display: block;
+    color: red; }
+  section .form span.success {
+    display: block;
+    color: green; }
+  section .form button[type="submit"] {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    border: 0;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 8px 30px; }
+    section .form button[type="submit"]:hover {
+      background: linear-gradient(45deg, #1dc8cd, #1de099);
+      cursor: pointer; }
+
+/*# sourceMappingURL=contact.component.css.map */
