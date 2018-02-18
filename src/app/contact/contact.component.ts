@@ -12,7 +12,7 @@ export class ContactComponent implements OnInit {
   description = 'Pierwszy w Polsce e-klub biegowy w formie platformy do wspólnego realizowania planów treningowych, wymiany doświadczeń oraz wspólnych startów biegowych.';
   street = 'ul. Boguszyce 139';
   city = '56-400 Oleśnica';
-  mail = 'kontakt@runners.elite';
+  mail = 'kontakt@runners-elite.club';
   phone = '+48 690 422 543';
 
   wrongName = 'Wpisz swoje imię';

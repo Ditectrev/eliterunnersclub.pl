@@ -13,9 +13,11 @@ import { PricingComponent } from './pricing/pricing.component';
 import { FaqComponent } from './faq/faq.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 import { MailService } from './shared/mail.service';
 
+import { MomentModule } from 'angular2-moment';
 
 @NgModule({
   declarations: [
@@ -28,12 +30,14 @@ import { MailService } from './shared/mail.service';
     PricingComponent,
     FaqComponent,
     GalleryComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    MomentModule
   ],
   providers: [MailService],
   bootstrap: [AppComponent]
