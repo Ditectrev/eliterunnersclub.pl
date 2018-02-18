@@ -1,104 +1,68 @@
-/*
-Error: Undefined variable: "$accent-color".
-        on line 18 of footer.component.scss
+body {
+  background: #ffffff;
+  color: #666666;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden; }
 
-13:       padding-left: 15px;
-14:       &:first-child {
-15:         padding-left: 0;
-16:       }
-17:       &:hover {
-18:         color: $accent-color;
-19:       }
-20:     }
-21:   }
-22: }
+a {
+  color: #1dc8cd;
+  transition: .5s; }
+  a:hover, a:active, a:focus {
+    color: #1dc9ce; }
 
-Backtrace:
-footer.component.scss:18
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `block in with_base'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:135:in `with_frame'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/stack.rb:79:in `with_base'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/plugin.rb:82:in `update_stylesheets'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/gems/sass-3.5.3/bin/scss:13:in `<top (required)>'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/bin/scss:23:in `load'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/bin/scss:23:in `<main>'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `eval'
-/Users/danieldanielecki/.rvm/gems/ruby-2.4.1/bin/ruby_executable_hooks:15:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$accent-color\".\A         on line 18 of footer.component.scss\A \A 13:       padding-left: 15px;\A 14:       &:first-child {\A 15:         padding-left: 0;\A 16:       }\A 17:       &:hover {\A 18:         color: $accent-color;\A 19:       }\A 20:     }\A 21:   }\A 22: }"; }
+p {
+  margin: 0 0 30px 0;
+  padding: 0; }
+
+.back-to-top {
+  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  border-radius: 4px 4px 0 0;
+  bottom: 0;
+  color: #ffffff;
+  display: none;
+  font-size: 16px;
+  padding: 2px 20px 8px 20px;
+  position: fixed;
+  right: 15px;
+  transition: none; }
+  .back-to-top:focus {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    color: #ffffff;
+    outline: none; }
+  .back-to-top:hover {
+    background: #1dc8cd;
+    color: #ffffff; }
+
+.section-header .section-title {
+  color: #111111;
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center; }
+.section-header .section-description {
+  color: #777777;
+  font-style: italic;
+  padding-bottom: 40px;
+  text-align: center; }
+.section-header .section-divider {
+  background: #1dc8cd;
+  background: linear-gradient(0deg, #1dc8cd 0%, #55fabe 100%);
+  display: block;
+  height: 3px;
+  margin: 0 auto 20px;
+  width: 60px; }
+
+footer {
+  background: #ffffff;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+  color: #333333;
+  font-size: 14px;
+  padding: 30px 0; }
+  footer .footer-links a {
+    color: #666666;
+    padding-left: 15px; }
+    footer .footer-links a:first-child {
+      padding-left: 0; }
+    footer .footer-links a:hover {
+      color: #1dc8cd; }
+
+/*# sourceMappingURL=footer.component.css.map */

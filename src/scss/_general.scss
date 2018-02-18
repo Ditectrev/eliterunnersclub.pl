@@ -1,0 +1,46 @@
+@import "variables";
+
+body {
+  background: #ffffff;
+  color: $text-color;
+  font-family: $text-font;
+  overflow-x: hidden;
+}
+
+a {
+  color: $accent-color;
+  transition: .5s;
+
+  &:hover, &:active, &:focus {
+    color: lighten($accent-color, .2);
+  }
+}
+
+p {
+  margin: 0 0 30px 0;
+  padding: 0;
+}
+
+.back-to-top {
+  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  border-radius: 4px 4px 0 0;
+  bottom: 0;
+  color: #ffffff;
+  display: none;
+  font-size: 16px;
+  padding: 2px 20px 8px 20px;
+  position: fixed;
+  right: 15px;
+  transition: none;
+
+  &:focus {
+    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    color: #ffffff;
+    outline: none;
+  }
+
+  &:hover {
+    background: $accent-color;
+    color: #ffffff;
+  }
+}
