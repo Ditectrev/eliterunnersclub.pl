@@ -66,11 +66,11 @@ section {
       line-height: 1;
       padding: 18px 20px 18px 0;
       position: relative; }
-      section #faq-list a .collapse {
+      section #faq-list a.collapse {
         color: #1dc8cd; }
-      section #faq-list a .collapse {
+      section #faq-list a.collapsed {
         color: #000000; }
-        section #faq-list a .collapse i::before {
+        section #faq-list a.collapsed i::before {
           content: "\f2c7" !important; }
     section #faq-list i {
       font-size: 24px;

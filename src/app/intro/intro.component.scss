@@ -10,7 +10,11 @@ section {
     padding-top: 140px;
     text-align: center;
     vertical-align: top;
-    
+
+    @media (max-height: 768px) {
+      padding-top: 80px;
+    }
+
     @media (max-width: 768px) {
       padding-top: 50px;
     }
@@ -23,7 +27,7 @@ section {
     line-height: 56px;
     margin: 30px 0 10px 0;
     padding: 0 15px;
-    
+
     @media (max-width: 768px) {
       font-size: 28px;
       line-height: 36px;
@@ -100,7 +104,23 @@ section {
     img {
       box-shadow: 0 -2px 19px 4px rgba(0,0,0,.3);
     }
-    
+
+    @media (max-height: 768px) {
+      height: 430px;
+
+      .product-screen-1 {
+        height: 400px;
+      }
+
+      .product-screen-2 {
+        height: 330px;
+      }
+
+      .product-screen-3 {
+        height: 260px;
+      }
+    }
+
     @media (max-width: 768px) {
       height: 400px;
 

@@ -60,6 +60,9 @@ section {
     padding-top: 140px;
     text-align: center;
     vertical-align: top; }
+    @media (max-height: 768px) {
+      section .intro-text {
+        padding-top: 80px; } }
     @media (max-width: 768px) {
       section .intro-text {
         padding-top: 50px; } }
@@ -129,6 +132,15 @@ section {
       z-index: 10; }
     section .product-screens img {
       box-shadow: 0 -2px 19px 4px rgba(0, 0, 0, 0.3); }
+    @media (max-height: 768px) {
+      section .product-screens {
+        height: 430px; }
+        section .product-screens .product-screen-1 {
+          height: 400px; }
+        section .product-screens .product-screen-2 {
+          height: 330px; }
+        section .product-screens .product-screen-3 {
+          height: 260px; } }
     @media (max-width: 768px) {
       section .product-screens {
         height: 400px; }

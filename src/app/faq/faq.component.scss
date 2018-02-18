@@ -20,10 +20,10 @@ section {
       padding: 18px 20px 18px 0;
       position: relative;
 
-      .collapse {
+      &.collapse {
         color: $accent-color;
       }
-      .collapse {
+      &.collapsed {
         color: #000000;
         i::before {
           content: "\f2c7" !important;

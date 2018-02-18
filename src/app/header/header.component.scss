@@ -1,4 +1,4 @@
-@import "../../scss/style";
+@import "../../scss/variables";
 
 header {
   height: 92px;
@@ -138,7 +138,7 @@ header {
 #nav-menu-container {
   float: right;
   margin: 0;
-  
+
   @media (max-width: 768px) {
     display: none;
   }
