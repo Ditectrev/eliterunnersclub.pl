@@ -13,6 +13,8 @@ a {
 
   &:hover, &:active, &:focus {
     color: lighten($accent-color, .2);
+    outline: none;
+    text-decoration: none;
   }
 }
 
