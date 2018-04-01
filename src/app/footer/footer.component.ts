@@ -11,4 +11,11 @@ export class FooterComponent {
   constructor() {
     this.myDate = new Date();
   }
+
+  routes = [
+    { 'url': '/prywatnosc', 'name': 'Polityka prywatności' },
+    { 'url': '/cookies', 'name': 'Informacje o cookies' },
+    { 'url': '/regulamin', 'name': 'Regulamin' },
+    { 'url': '/faq', 'name': 'FAQ' }
+  ];
 }

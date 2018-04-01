@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACN,MAAM,EAAE,YAAY",
+"sources": ["regulations.component.scss"],
+"names": [],
+"file": "regulations.component.css"
+}

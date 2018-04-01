@@ -2,13 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
 import { FeaturesComponent } from './features/features.component';
-import { AdvancedFeaturesComponent } from './advanced-features/advanced-features.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { FaqComponent } from './faq/faq.component';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -18,6 +18,13 @@ import { FooterComponent } from './footer/footer.component';
 import { MailService } from './shared/mail.service';
 
 import { MomentModule } from 'angular2-moment';
+import { HomeComponent } from './home/home.component';
+import { ErrorPageComponent } from './error-page/error-page.component';
+
+import { appRoutes } from '../routes';
+import { CookiesComponent } from './cookies/cookies.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { RegulationsComponent } from './regulations/regulations.component';
 
 @NgModule({
   declarations: [
@@ -26,18 +33,23 @@ import { MomentModule } from 'angular2-moment';
     IntroComponent,
     AboutComponent,
     FeaturesComponent,
-    AdvancedFeaturesComponent,
     PricingComponent,
     FaqComponent,
     GalleryComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    ErrorPageComponent,
+    CookiesComponent,
+    PrivacyComponent,
+    RegulationsComponent
   ],
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     HttpModule,
-    MomentModule
+    MomentModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [MailService],
   bootstrap: [AppComponent]

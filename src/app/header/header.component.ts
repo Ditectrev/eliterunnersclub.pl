@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-
+  routes = [
+    { 'url': '/', 'name': 'Strona główna' },
+    { 'url': '/o-klubie', 'name': 'O klubie' },
+    { 'url': '/funkcje', 'name': 'Funkcje' },
+    { 'url': '/galeria', 'name': 'Galeria' },
+    { 'url': '/kontakt', 'name': 'Kontakt' }
+  ];
 }

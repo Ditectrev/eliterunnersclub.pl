@@ -2,17 +2,19 @@
   <div class="container">
     <div id="logo" class="pull-left">
       <h1>
-        <a href="#" role="link" class="scrollto" alt="RunnersElite" title="RunnersElite">RunnersElite</a>
+        <a routerLink="/" role="link" class="scrollto" alt="RunnersElite" title="RunnersElite">RunnersElite</a>
       </h1>
     </div>
     <nav id="nav-menu-container">
       <ul class="nav-menu">
-        <ul class="menu-active"><a href="#" role="link" alt="Strona główna" title="Strona główna">Strona główna</a></ul>
-        <li><a href="#funkcje" role="link" alt="Funkcje" title="Funkcje">Funkcje</a></li>
-        <li><a href="#cennik" role="link" alt="Cennik" title="Cennik">Cennik</a></li>
-        <li><a href="#o-klubie" role="link" alt="O klubie" title="O klubie">O klubie</a></li>
-        <li><a href="#galeria" role="link" alt="Galeria" title="Galeria">Galeria</a></li>
-        <li><a href="#kontakt" role="link" alt="Kontakt" title="Kontakt">Kontakt</a></li>
+        <ul class="menu-active"><a routerLink="/" role="link" alt="Strona główna" title="Strona główna">Strona główna</a></ul>
+        <li
+          routerLinkActive="menu-active"
+          [routerLinkActiveOptions]="{exact: true}"
+          *ngFor="let route of routes; let i = index"
+        >
+          <a routerLink="{{ route.url }}" role="link">{{ route.name }}</a>
+        </li>
       </ul>
     </nav>
   </div>
