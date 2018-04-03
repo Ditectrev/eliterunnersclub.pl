@@ -11,7 +11,6 @@ import { AboutComponent } from './about/about.component';
 import { FeaturesComponent } from './features/features.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { FaqComponent } from './faq/faq.component';
-import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -35,7 +34,6 @@ import { RegulationsComponent } from './regulations/regulations.component';
     FeaturesComponent,
     PricingComponent,
     FaqComponent,
-    GalleryComponent,
     ContactComponent,
     FooterComponent,
     HomeComponent,
