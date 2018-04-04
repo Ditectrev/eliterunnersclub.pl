@@ -24,6 +24,8 @@ import { appRoutes } from '../routes';
 import { CookiesComponent } from './cookies/cookies.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { RegulationsComponent } from './regulations/regulations.component';
+import { UsersComponent } from './users/users.component';
+import { UserComponent } from './users/user/user.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { RegulationsComponent } from './regulations/regulations.component';
     ErrorPageComponent,
     CookiesComponent,
     PrivacyComponent,
-    RegulationsComponent
+    RegulationsComponent,
+    UsersComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
