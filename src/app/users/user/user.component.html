@@ -1,6 +1,16 @@
 <section>
-  <p>ID użytkownika: {{ user.id }}</p>
-  <p>Imię użytkownika: {{ user.name }}</p>
+  <p>ID: {{ user.id }}</p>
+  <p>Imię: {{ user.name }}</p>
+  <p>Wiek: {{ user.age }}</p>
+  <p>Miejscowość: {{ user.city }}</p>
+  <p>Aktywności: {{ user.activities }}</p>
+  <p>Kilometrów: {{ user.kilometers }}</p>
+  <!-- TODO: Add avatar and gallery. -->
+  <p>Zdjęcie: </p>
+  <p>Galeria: </p>
+  <!-- TODO: Add edit-user component. -->
+  <!-- TODO: Add user-resolver component. -->
+  <p>Edytuj dane:</p>
   <hr>
-  <a [routerLink]="['/uzytkownicy', 10, 'Anna']">Pokaż Anna (10)</a>
+  <a [routerLink]="['/uzytkownicy', 10, 'Anna', 5, 'Oleśnica', 23, 4021]">Pokaż Anna (10)</a>
 </section>

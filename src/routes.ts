@@ -24,7 +24,7 @@ export const appRoutes: Routes = [
   { path: 'prywatnosc', component: PrivacyComponent, data: { animation: 'page8' } },
   { path: 'regulamin', component: RegulationsComponent, data: { animation: 'page9' } },
   { path: 'uzytkownicy', component: UsersComponent, data: { animation: 'page10' }, children: [
-    {path: ':id/:name', component: UserComponent, data: { animation: 'page11' } }
+    {path: ':id/:name/:age/:city/:activities/:kilometers', component: UserComponent, data: { animation: 'page11' } }
   ] },
   { path: 'nie-znaleziono', component: ErrorPageComponent, data: { animation: 'page12' } },
   // It's important that wildcard route has to be the last element in array of routes, because routes parses from top to bottom.

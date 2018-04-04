@@ -2,7 +2,7 @@
   <div class="col-xs-12 col-sm-4">
     <div class="list-group">
       <a
-        [routerLink]="['/uzytkownicy', user.id, user.name]"
+        [routerLink]="['/uzytkownicy', user.id, user.name, user.age, user.city, user.activities, user.kilometers]"
         class="list-group-item"
         *ngFor="let user of users">
         {{ user.name }}
