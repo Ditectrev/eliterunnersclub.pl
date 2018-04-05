@@ -1,8 +1,9 @@
 <div class="row">
   <div class="col-xs-12 col-sm-4">
     <div class="list-group">
+      <!-- TODO: Add edit. -->
       <a
-        [routerLink]="['/uzytkownicy', user.id, user.name, user.age, user.city, user.activities, user.kilometers]"
+        [routerLink]="['/uzytkownicy', user.id]"
         class="list-group-item"
         *ngFor="let user of users">
         {{ user.name }}

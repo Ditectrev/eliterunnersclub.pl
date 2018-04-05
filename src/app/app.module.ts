@@ -26,6 +26,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { RegulationsComponent } from './regulations/regulations.component';
 import { UsersComponent } from './users/users.component';
 import { UserComponent } from './users/user/user.component';
+import {UsersService} from './users/users.service';
+import {UserResolver} from './users/user/user-resolver.service';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,7 @@ import { UserComponent } from './users/user/user.component';
     MomentModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [MailService],
+  providers: [MailService, UsersService, UserResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

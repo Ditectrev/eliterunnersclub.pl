@@ -1,35 +1,20 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {UsersService} from './users.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss']
 })
-export class UsersComponent {
-  users = [
-    {
-      id: 1,
-      name: 'Adam',
-      age: 26,
-      city: 'Warszawa',
-      activities: 27,
-      kilometers: 2081
-    },
-    {
-      id: 2,
-      name: 'Anna',
-      age: 43,
-      city: 'Wrocław',
-      activities: 6,
-      kilometers: 675
-    },
-    {
-      id: 3,
-      name: 'Paweł',
-      age: 21,
-      city: 'Łódź',
-      activities: 52,
-      kilometers: 4532
-    }
-  ];
+export class UsersComponent implements OnInit {
+  private users: {id: number, name: string, age: number, city: string, activities: number, kilometers: number}[] = [];
+
+  constructor(private usersService: UsersService,
+              private router: Router,
+              private route: ActivatedRoute) { }
+
+  ngOnInit() {
+    this.users = this.usersService.getUsers();
+  }
 }

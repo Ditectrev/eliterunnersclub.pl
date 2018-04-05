@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Params} from '@angular/router';
+import {ActivatedRoute, Data, Params, Router} from '@angular/router';
+import {UsersService} from '../users.service';
 
 @Component({
   selector: 'app-user',
@@ -16,30 +17,23 @@ export class UserComponent implements OnInit {
     kilometers: number
   };
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(
+    private usersService: UsersService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) { }
 
-  // TODO: Add agile links.
   ngOnInit() {
-    // Get access to the ID and name in the URL.
-    this.user = {
-      id: this.route.snapshot.params['id'],
-      name: this.route.snapshot.params['name'],
-      age: this.route.snapshot.params['age'],
-      city: this.route.snapshot.params['city'],
-      activities: this.route.snapshot.params['activities'],
-      kilometers: this.route.snapshot.params['kilometers']
-    };
-    this.route.params
-    // Update ID and name whenever those parameters changes.
+    this.route.data
       .subscribe(
-        (params: Params) => {
-          this.user.id = params['id'];
-          this.user.name = params['name'];
-          this.user.age = params['age'];
-          this.user.city = params['city'];
-          this.user.activities = params['activities'];
-          this.user.kilometers = params['kilometers'];
+        (data: Data) => {
+          this.user = data['user']
         }
       );
+  }
+
+  // TODO: Implement onEdit method.
+  onEdit() {
+
   }
 }

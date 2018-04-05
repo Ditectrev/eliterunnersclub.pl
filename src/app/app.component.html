@@ -1,8 +1,13 @@
 <app-header></app-header>
+<div class="container">
+  <div class="row">
+    <ul>
+      <li role="presentation" routerLinkActive="active"><a routerLink="uzytkownicy">Użytkownicy</a></li>
+    </ul>
+  </div>
+</div>
 <!-- Here display routes content. -->
-<main [@routeState]="getRouterOutletState(routerOutlet)">
-  <router-outlet #routerOutlet="outlet"></router-outlet>
-</main>
+<router-outlet></router-outlet>
 
 <app-footer></app-footer>
 

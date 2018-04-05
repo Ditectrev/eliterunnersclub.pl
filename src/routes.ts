@@ -12,6 +12,7 @@ import {CookiesComponent} from './app/cookies/cookies.component';
 import {RegulationsComponent} from './app/regulations/regulations.component';
 import {UsersComponent} from './app/users/users.component';
 import {UserComponent} from './app/users/user/user.component';
+import {UserResolver} from './app/users/user/user-resolver.service';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page1' } },
@@ -23,8 +24,9 @@ export const appRoutes: Routes = [
   { path: 'cennik', component: PricingComponent, data: { animation: 'page7' } },
   { path: 'prywatnosc', component: PrivacyComponent, data: { animation: 'page8' } },
   { path: 'regulamin', component: RegulationsComponent, data: { animation: 'page9' } },
+  // TODO: Add canACtivateChild: [AuthGuard] and edit.
   { path: 'uzytkownicy', component: UsersComponent, data: { animation: 'page10' }, children: [
-    {path: ':id/:name/:age/:city/:activities/:kilometers', component: UserComponent, data: { animation: 'page11' } }
+    {path: ':id', component: UserComponent, resolve: {user: UserResolver}, data: { animation: 'page11' } }
   ] },
   { path: 'nie-znaleziono', component: ErrorPageComponent, data: { animation: 'page12' } },
   // It's important that wildcard route has to be the last element in array of routes, because routes parses from top to bottom.
