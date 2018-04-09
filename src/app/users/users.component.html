@@ -4,6 +4,8 @@
       <!-- TODO: Add edit. -->
       <a
         [routerLink]="['/uzytkownicy', user.id]"
+        [queryParams]="{allowEdit: user.id === 1}"
+        [fragment]="'loading'"
         class="list-group-item"
         *ngFor="let user of users">
         {{ user.name }}

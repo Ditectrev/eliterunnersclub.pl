@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
     AOS.init();
   }
 
+  // TODO: Add animations.
   getRouterOutletState(routerOutlet: RouterOutlet) {
     const routeData = routerOutlet.activatedRouteData['animation'];
     return routeData ? routeData : 'rootPage';

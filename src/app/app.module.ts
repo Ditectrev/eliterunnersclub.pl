@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
@@ -28,6 +28,10 @@ import { UsersComponent } from './users/users.component';
 import { UserComponent } from './users/user/user.component';
 import {UsersService} from './users/users.service';
 import {UserResolver} from './users/user/user-resolver.service';
+import { EditUserComponent } from './users/edit-user/edit-user.component';
+import {CanDeactivateGuard} from './users/edit-user/can-deactivate-guard.service';
+import {AuthService} from '../auth.service';
+import {AuthGuard} from '../auth-guard.service';
 
 @NgModule({
   declarations: [
@@ -46,16 +50,18 @@ import {UserResolver} from './users/user/user-resolver.service';
     PrivacyComponent,
     RegulationsComponent,
     UsersComponent,
-    UserComponent
+    UserComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     ReactiveFormsModule,
     HttpModule,
     MomentModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [MailService, UsersService, UserResolver],
+  providers: [AuthService, AuthGuard, CanDeactivateGuard, MailService, UsersService, UserResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

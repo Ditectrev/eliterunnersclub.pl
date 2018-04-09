@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Data, Params, Router} from '@angular/router';
+import {ActivatedRoute, Data, Router} from '@angular/router';
 import {UsersService} from '../users.service';
 
 @Component({
@@ -32,8 +32,8 @@ export class UserComponent implements OnInit {
       );
   }
 
-  // TODO: Implement onEdit method.
+  // TODO: Fix onEdit method.
   onEdit() {
-
+    this.router.navigate(['edytuj'], {relativeTo: this.route, queryParamsHandling: 'preserve'}); // Make relative path, queryParamsHandling handles query parameters.
   }
 }
