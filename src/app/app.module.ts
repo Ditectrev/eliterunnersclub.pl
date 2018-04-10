@@ -32,6 +32,7 @@ import { EditUserComponent } from './users/edit-user/edit-user.component';
 import {CanDeactivateGuard} from './users/edit-user/can-deactivate-guard.service';
 import {AuthService} from '../auth.service';
 import {AuthGuard} from '../auth-guard.service';
+import {AvatarModule} from 'ngx-avatar';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import {AuthGuard} from '../auth-guard.service';
     ReactiveFormsModule,
     HttpModule,
     MomentModule,
+    AvatarModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [AuthService, AuthGuard, CanDeactivateGuard, MailService, UsersService, UserResolver],

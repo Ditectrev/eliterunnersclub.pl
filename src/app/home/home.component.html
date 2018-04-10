@@ -1,6 +1,12 @@
 <app-intro></app-intro>
-<h4>Welcome to Server Manager 4.0</h4>
-<p>Manage your Servers and Users.</p>
-<button class="btn btn-primary" (click)="onLoadUser(1)">Load Server 1</button>
-<button class="btn btn-default" (click)="onLogin()">Login</button>
-<button class="btn btn-default" (click)="onLogout()">Logout</button>
+<div class="container">
+  <div class="row">
+    <ul>
+      <li role="presentation" routerLinkActive="active"><a routerLink="uzytkownicy">Użytkownicy</a></li>
+    </ul>
+  </div>
+</div>
+<!-- TODO: Add DB logic. -->
+<button class="btn btn-primary" (click)="onLoadUser(1)">Wczytaj użytkownika z ID 1</button>
+<button class="btn btn-default" (click)="onLogin()">Zaloguj się</button>
+<button class="btn btn-default" (click)="onLogout()">Wyloguj się</button>
