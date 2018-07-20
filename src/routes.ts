@@ -16,6 +16,7 @@ import {UserResolver} from './app/users/user/user-resolver.service';
 import {EditUserComponent} from './app/users/edit-user/edit-user.component';
 import {CanDeactivateGuard} from './app/users/edit-user/can-deactivate-guard.service';
 import {AuthGuard} from './auth-guard.service';
+import {RedirectForumComponent} from './app/redirect-forum/redirect-forum.component';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page1' } },

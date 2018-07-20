@@ -30,7 +30,7 @@ import {AuthService} from '../auth.service';
 import {AuthGuard} from '../auth-guard.service';
 import {AvatarModule} from 'ngx-avatar';
 import { MailService } from './shared/mail.service';
-import { NgxGalleryModule } from 'ngx-gallery'
+import { NgxGalleryModule } from 'ngx-gallery';
 
 
 @NgModule({

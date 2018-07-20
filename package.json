@@ -37,6 +37,7 @@
     "npm": "^5.8.0",
     "npm-font-open-sans": "^1.1.0",
     "popper.js": "^1.13.0",
+    "ramda": "^0.25.0",
     "rxjs": "^5.5.2",
     "typeface-montserrat": "0.0.54",
     "zone.js": "^0.8.14"

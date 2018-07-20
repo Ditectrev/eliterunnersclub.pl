@@ -9,7 +9,7 @@ header {
   top: 0;
   transition: all .5s;
   z-index: 997;
-  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  background: linear-gradient(90deg, #131717, #edc92b);
 
   #logo {
     float: left;
@@ -49,12 +49,12 @@ header {
     }
   }
 
-  &.header-fixed {
-    background: linear-gradient(45deg, #1de099, #1dc8cd);
-    height: 72px;
-    padding: 20px 0;
-    transition: all .5s;
-  }
+  //&.header-fixed {
+  //  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  //  height: 72px;
+  //  padding: 20px 0;
+  //  transition: all .5s;
+  //}
 }
 
 .nav-menu {
