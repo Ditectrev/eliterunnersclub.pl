@@ -8,22 +8,5 @@ import {AuthService} from '../../auth.service';
   styleUrls: ['./home.component.scss'],
 
 })
-export class HomeComponent implements OnInit {
-  constructor(private router: Router, private authService: AuthService) { }
-
-  ngOnInit() {
-
-  }
-
-  onLoadUser(id: number) {
-    this.router.navigate(['/uzytkownicy', id, 'edytuj'], {queryParams: {allowEdit: '1'}, fragment: 'loading'}); // Navigate to new route, make this absolute path.
-  }
-
-  onLogin() {
-    this.authService.login();
-  }
-
-  onLogout() {
-    this.authService.logout();
-  }
+export class HomeComponent {
 }
