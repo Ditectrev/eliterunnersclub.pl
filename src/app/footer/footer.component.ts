@@ -15,7 +15,6 @@ export class FooterComponent {
   routes = [
     { 'url': '/prywatnosc', 'name': 'Polityka prywatności' },
     { 'url': '/cookies', 'name': 'Informacje o cookies' },
-    { 'url': '/regulamin', 'name': 'Regulamin' },
-    { 'url': '/faq', 'name': 'FAQ' }
+    { 'url': '/regulamin', 'name': 'Regulamin' }
   ];
 }

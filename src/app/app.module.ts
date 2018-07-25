@@ -9,7 +9,6 @@ import { HeaderComponent } from './header/header.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
 import { PricingComponent } from './pricing/pricing.component';
-import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MomentModule } from 'angular2-moment';
@@ -39,7 +38,6 @@ import { NgxGalleryModule } from 'ngx-gallery';
     IntroComponent,
     AboutComponent,
     PricingComponent,
-    FaqComponent,
     ContactComponent,
     FooterComponent,
     HomeComponent,
