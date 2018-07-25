@@ -4,7 +4,6 @@ import {AboutComponent} from './app/about/about.component';
 import {ContactComponent} from './app/contact/contact.component';
 import {ErrorPageComponent} from './app/error-page/error-page.component';
 import {FaqComponent} from './app/faq/faq.component';
-import {FeaturesComponent} from './app/features/features.component';
 import {HomeComponent} from './app/home/home.component';
 import {PricingComponent} from './app/pricing/pricing.component';
 import {PrivacyComponent} from './app/privacy/privacy.component';
@@ -23,7 +22,7 @@ export const appRoutes: Routes = [
   { path: 'cookies', component: CookiesComponent, data: { animation: 'page3' } },
   { path: 'kontakt', component: ContactComponent, data: { animation: 'page4' } },
   { path: 'faq', component: FaqComponent, data: { animation: 'page5' } },
-  { path: 'funkcje', component: FeaturesComponent, data: { animation: 'page6' } },
+  // TODO: Numerate properly.
   { path: 'cennik', component: PricingComponent, data: { animation: 'page7' } },
   { path: 'prywatnosc', component: PrivacyComponent, data: { animation: 'page8' } },
   { path: 'regulamin', component: RegulationsComponent, data: { animation: 'page9' } },

@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
-import { FeaturesComponent } from './features/features.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
@@ -39,7 +38,6 @@ import { NgxGalleryModule } from 'ngx-gallery';
     HeaderComponent,
     IntroComponent,
     AboutComponent,
-    FeaturesComponent,
     PricingComponent,
     FaqComponent,
     ContactComponent,

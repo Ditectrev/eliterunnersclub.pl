@@ -9,7 +9,6 @@ export class HeaderComponent {
   routes = [
     { 'url': '/', 'name': 'Strona główna' },
     { 'url': '/o-klubie', 'name': 'O klubie' },
-    { 'url': '/funkcje', 'name': 'Funkcje' },
     { 'url': '/kontakt', 'name': 'Kontakt' }
   ];
 }
