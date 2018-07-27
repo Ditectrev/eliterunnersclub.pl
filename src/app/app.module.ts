@@ -18,14 +18,6 @@ import { appRoutes } from '../routes';
 import { CookiesComponent } from './cookies/cookies.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { RegulationsComponent } from './regulations/regulations.component';
-import { UsersComponent } from './users/users.component';
-import { UserComponent } from './users/user/user.component';
-import {UsersService} from './users/users.service';
-import {UserResolver} from './users/user/user-resolver.service';
-import { EditUserComponent } from './users/edit-user/edit-user.component';
-import {CanDeactivateGuard} from './users/edit-user/can-deactivate-guard.service';
-import {AuthService} from '../auth.service';
-import {AuthGuard} from '../auth-guard.service';
 import {AvatarModule} from 'ngx-avatar';
 import { MailService } from './shared/mail.service';
 import { NgxGalleryModule } from 'ngx-gallery';
@@ -46,9 +38,6 @@ import { IndividualTrainingComponent } from './individual-training/individual-tr
     CookiesComponent,
     PrivacyComponent,
     RegulationsComponent,
-    UsersComponent,
-    UserComponent,
-    EditUserComponent,
     IndividualTrainingComponent
   ],
   imports: [
@@ -61,7 +50,7 @@ import { IndividualTrainingComponent } from './individual-training/individual-tr
     NgxGalleryModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [AuthService, AuthGuard, CanDeactivateGuard, MailService, UsersService, UserResolver],
+  providers: [MailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
