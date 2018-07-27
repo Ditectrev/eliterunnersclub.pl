@@ -20,7 +20,6 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { RegulationsComponent } from './regulations/regulations.component';
 import {AvatarModule} from 'ngx-avatar';
 import { MailService } from './shared/mail.service';
-import { NgxGalleryModule } from 'ngx-gallery';
 import { IndividualTrainingComponent } from './individual-training/individual-training.component';
 
 
@@ -47,7 +46,6 @@ import { IndividualTrainingComponent } from './individual-training/individual-tr
     HttpModule,
     MomentModule,
     AvatarModule,
-    NgxGalleryModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [MailService],
