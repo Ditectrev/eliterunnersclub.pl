@@ -18,9 +18,9 @@ import { appRoutes } from '../routes';
 import { CookiesComponent } from './cookies/cookies.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { RegulationsComponent } from './regulations/regulations.component';
-import {AvatarModule} from 'ngx-avatar';
 import { MailService } from './shared/mail.service';
 import { IndividualTrainingComponent } from './individual-training/individual-training.component';
+import { ApplicationsComponent } from './applications/applications.component';
 
 
 @NgModule({
@@ -37,7 +37,8 @@ import { IndividualTrainingComponent } from './individual-training/individual-tr
     CookiesComponent,
     PrivacyComponent,
     RegulationsComponent,
-    IndividualTrainingComponent
+    IndividualTrainingComponent,
+    ApplicationsComponent
   ],
   imports: [
     BrowserModule,
@@ -45,7 +46,6 @@ import { IndividualTrainingComponent } from './individual-training/individual-tr
     ReactiveFormsModule,
     HttpModule,
     MomentModule,
-    AvatarModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [MailService],

@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   routes = [
-    { 'url': '/', 'name': 'Strona główna' },
     { 'url': '/o-klubie', 'name': 'O klubie' },
-    { 'url': '/kontakt', 'name': 'Kontakt' },
-    { 'url': '/trening-indywidualny', 'name': 'Indywidualny trening' }
+    { 'url': '/aplikacje', 'name': 'Aplikacje' },
+    { 'url': '/trening-indywidualny', 'name': 'Indywidualny trening' },
+    { 'url': '/kontakt', 'name': 'Kontakt' }
   ];
 }
