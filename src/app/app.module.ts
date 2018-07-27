@@ -29,6 +29,7 @@ import {AuthGuard} from '../auth-guard.service';
 import {AvatarModule} from 'ngx-avatar';
 import { MailService } from './shared/mail.service';
 import { NgxGalleryModule } from 'ngx-gallery';
+import { IndividualTrainingComponent } from './individual-training/individual-training.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { NgxGalleryModule } from 'ngx-gallery';
     RegulationsComponent,
     UsersComponent,
     UserComponent,
-    EditUserComponent
+    EditUserComponent,
+    IndividualTrainingComponent
   ],
   imports: [
     BrowserModule,

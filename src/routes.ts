@@ -14,6 +14,7 @@ import {UserResolver} from './app/users/user/user-resolver.service';
 import {EditUserComponent} from './app/users/edit-user/edit-user.component';
 import {CanDeactivateGuard} from './app/users/edit-user/can-deactivate-guard.service';
 import {AuthGuard} from './auth-guard.service';
+import {IndividualTrainingComponent} from './app/individual-training/individual-training.component';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page1' } },
@@ -24,7 +25,8 @@ export const appRoutes: Routes = [
   { path: 'cennik', component: PricingComponent, data: { animation: 'page7' } },
   { path: 'prywatnosc', component: PrivacyComponent, data: { animation: 'page8' } },
   { path: 'regulamin', component: RegulationsComponent, data: { animation: 'page9' } },
-  // TODO: Add canACtivateChild: [AuthGuard] and edit.
+  { path: 'trening-indywidualny', component: IndividualTrainingComponent, data: { animation: 'page14' } },
+  // TODO: Remove users.
   // Apply guards to 'uzytkownicy' children.
   { path: 'uzytkownicy', canActivateChild: [AuthGuard], component: UsersComponent, data: { animation: 'page10' }, children: [
     {path: ':id', component: UserComponent, resolve: {user: UserResolver}, data: { animation: 'page11' } },
