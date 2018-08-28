@@ -3,10 +3,10 @@
     <div class="row" data-aos="fade-up">
       <div class="col-md-4">
         <div class="contact-about">
-          <h3>{{ title }}</h3>
+          <h3>{{ title1 }}<br>{{ title2 }}</h3>
           <p>{{ description }}</p>
           <div class="social-links">
-            <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.facebook.com/Elite-Runners-Club-623896761295620/" class="facebook" role="link" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
             <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
           </div>
         </div>
@@ -30,10 +30,12 @@
       <div class="col-lg-5 col-md-8">
         <div class="form">
           <form
+            action="/kontakt"
             [formGroup]="signupForm"
             (ngSubmit)="onSubmit(signupForm.value.userData)"
             role="form"
             class="contactForm"
+            method="post"
           >
             <div formGroupName="userData">
             <div class="form-row">

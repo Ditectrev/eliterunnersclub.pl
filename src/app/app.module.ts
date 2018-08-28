@@ -18,7 +18,6 @@ import { appRoutes } from '../routes';
 import { CookiesComponent } from './cookies/cookies.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { RegulationsComponent } from './regulations/regulations.component';
-import { MailService } from './shared/mail.service';
 import { IndividualTrainingComponent } from './individual-training/individual-training.component';
 import { ApplicationsComponent } from './applications/applications.component';
 
@@ -48,7 +47,7 @@ import { ApplicationsComponent } from './applications/applications.component';
     MomentModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [MailService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
