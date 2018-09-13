@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { IntroComponent } from './intro/intro.component';
 import { AboutComponent } from './about/about.component';
-import { PricingComponent } from './pricing/pricing.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MomentModule } from 'angular2-moment';
@@ -19,7 +18,6 @@ import { CookiesComponent } from './cookies/cookies.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { RegulationsComponent } from './regulations/regulations.component';
 import { IndividualTrainingComponent } from './individual-training/individual-training.component';
-import { ApplicationsComponent } from './applications/applications.component';
 
 
 @NgModule({
@@ -28,7 +26,6 @@ import { ApplicationsComponent } from './applications/applications.component';
     HeaderComponent,
     IntroComponent,
     AboutComponent,
-    PricingComponent,
     ContactComponent,
     FooterComponent,
     HomeComponent,
@@ -36,8 +33,7 @@ import { ApplicationsComponent } from './applications/applications.component';
     CookiesComponent,
     PrivacyComponent,
     RegulationsComponent,
-    IndividualTrainingComponent,
-    ApplicationsComponent
+    IndividualTrainingComponent
   ],
   imports: [
     BrowserModule,
