@@ -18,6 +18,8 @@ import { CookiesComponent } from './cookies/cookies.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { RegulationsComponent } from './regulations/regulations.component';
 import { IndividualTrainingComponent } from './individual-training/individual-training.component';
+import { MembershipComponent } from './membership/membership.component';
+import { ApplicationsComponent } from './applications/applications.component';
 
 
 @NgModule({
@@ -33,7 +35,9 @@ import { IndividualTrainingComponent } from './individual-training/individual-tr
     CookiesComponent,
     PrivacyComponent,
     RegulationsComponent,
-    IndividualTrainingComponent
+    IndividualTrainingComponent,
+    MembershipComponent,
+    ApplicationsComponent
   ],
   imports: [
     BrowserModule,
