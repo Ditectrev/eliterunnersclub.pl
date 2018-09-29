@@ -1,18 +1,18 @@
 @import "variables";
 
 body {
-  background: #ffffff;
+  background: $white;
   color: $text-color;
   font-family: $text-font;
   overflow-x: hidden;
 }
 
 a {
-  color: $accent-color;
-  transition: .5s;
+  color: $golden-dream;
+  transition: .6s;
 
   &:hover, &:active, &:focus {
-    color: lighten($accent-color, .2);
+    color: darken($golden-dream, 20%);
     outline: none;
     text-decoration: none;
   }
@@ -24,7 +24,7 @@ p {
 }
 
 .back-to-top {
-  background: linear-gradient(45deg, #1de099, #1dc8cd);
+  background: linear-gradient(45deg, #1de099, $golden-dream);
   border-radius: 4px 4px 0 0;
   bottom: 0;
   color: #ffffff;
@@ -36,7 +36,7 @@ p {
   transition: none;
 
   &:focus {
-    background: linear-gradient(45deg, #1de099, #1dc8cd);
+    background: linear-gradient(45deg, #1de099, $golden-dream);
     color: #ffffff;
     outline: none;
   }

@@ -7,7 +7,7 @@ section {
 
   .contact-about {
     h3 {
-      color: $accent-color;
+      color: $golden-dream;
       font-family: $accent-font;
       font-size: 36px;
       font-weight: 300;
@@ -31,9 +31,9 @@ section {
 
     a {
       background: #ffffff;
-      border: 1px solid $accent-color;
+      border: 1px solid $golden-dream;
       border-radius: 50%;
-      color: $accent-color;
+      color: $golden-dream;
       display: inline-block;
       font-size: 18px;
       height: 36px;
@@ -41,11 +41,10 @@ section {
       margin-right: 4px;
       padding: 8px 0;
       text-align: center;
-      transition: .3s;
       width: 36px;
 
       &:hover {
-        background: $accent-color;
+        background: $golden-dream;
         color: #ffffff;
       }
     }
@@ -55,7 +54,7 @@ section {
     color: $heading-color;
 
     i {
-      color: $accent-color;
+      color: $golden-dream;
       float: left;
       font-size: 32px;
       line-height: 1;
@@ -92,14 +91,14 @@ section {
     }
 
     button[type="submit"] {
-      background: linear-gradient(45deg, #1de099, #1dc8cd);
+      background: $golden-dream;
       border: 0;
       border-radius: 20px;
       color: #ffffff;
       padding: 8px 30px;
 
       &:hover {
-        background: linear-gradient(45deg, #1dc8cd, #1de099);
+        background: darken($golden-dream, 10%);
         cursor: pointer;
       }
     }

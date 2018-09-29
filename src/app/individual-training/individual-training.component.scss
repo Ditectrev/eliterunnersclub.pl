@@ -25,7 +25,7 @@ i {
   transition: .5s;
 
   &:before {
-    background: linear-gradient(45deg, #131717 0%, #EDC92B 100%);
+    background: $golden-dream;
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
