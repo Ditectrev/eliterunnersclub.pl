@@ -1,3 +1,15 @@
+@import "../../scss/style";
+
 section {
   margin: 100px 20px 0;
+}
+
+h2 {
+  color: darken($golden-dream, 10%);
+  margin: 125px 0 25px;
+}
+
+h3 {
+  color: $golden-dream;
+  margin: 20px 0;
 }
