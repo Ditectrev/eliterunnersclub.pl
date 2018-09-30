@@ -1,3 +1,34 @@
+@import "../../scss/style";
+
 section {
   margin: 100px 20px 0;
+  h2 {
+    color: darken($golden-dream, 10%);
+    margin: 25px 0 25px;
+  }
+  h3 {
+    color: $golden-dream;
+    margin: 20px 0;
+  }
+  p {
+    color: $text-color;
+    line-height: 24px;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  i {
+    color: $text-color;
+    float: left;
+    font-size: 54px;
+    line-height: 1;
+    margin-top: -15px;
+    padding-right: 15px;
+    transition: .5s;
+    &:before {
+      background: $golden-dream;
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
 }
