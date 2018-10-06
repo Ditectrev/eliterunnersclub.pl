@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {NgModule, NO_ERRORS_SCHEMA} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
@@ -20,6 +20,7 @@ import { RegulationsComponent } from './regulations/regulations.component';
 import { IndividualTrainingComponent } from './individual-training/individual-training.component';
 import { MembershipComponent } from './membership/membership.component';
 import { ApplicationsComponent } from './applications/applications.component';
+import {MDBBootstrapModule} from 'angular-bootstrap-md';
 
 
 @NgModule({
@@ -45,8 +46,10 @@ import { ApplicationsComponent } from './applications/applications.component';
     ReactiveFormsModule,
     HttpModule,
     MomentModule,
+    MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })

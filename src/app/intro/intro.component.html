@@ -1,10 +1,42 @@
 <section>
-  <div class="text-overly"></div>
-  <div class="intro-text">
-    <h2><strong>SPOŁECZNOŚĆ TWORZONA PRZEZ BIEGACZY DLA<br>BIEGACZY ELIE RUNNERS CLUB</strong> to</h2>
-    <ul>
-      <li><h3>- WYJĄTKOWE MIEJSCE SPOTKAŃ I ROZWOJU WIĘZI ORAZ PASJI</h3></li>
-      <li><h3>- OGÓLNOPOLSKI KLUB ZRZESZAJĄCY ŚWIADOME OSOBY O WSPÓLNYCH CELACH I WIZJACH</h3></li>
-    </ul>
-  </div>
+  <!--<div class="text-overly"></div>-->
+  <!--<div class="intro-text">-->
+    <!--<h2><strong>SPOŁECZNOŚĆ TWORZONA PRZEZ BIEGACZY DLA<br>BIEGACZY ELIE RUNNERS CLUB</strong> to</h2>-->
+    <!--<ul>-->
+      <!--<li><h3>- WYJĄTKOWE MIEJSCE SPOTKAŃ I ROZWOJU WIĘZI ORAZ PASJI</h3></li>-->
+      <!--<li><h3>- OGÓLNOPOLSKI KLUB ZRZESZAJĄCY ŚWIADOME OSOBY O WSPÓLNYCH CELACH I WIZJACH</h3></li>-->
+    <!--</ul>-->
+  <!--</div>-->
+  <mdb-carousel [isControls]="true" class="carousel slide carousel-fade" [animation]="'slide'">
+    <mdb-carousel-item>
+      <div class="view w-100">
+        <img class="d-block w-100 h-30" src="../../assets/images/intro-image.jpg" alt="SPOŁECZNOŚĆ TWORZONA PRZEZ BIEGACZY">
+        <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">SPOŁECZNOŚĆ TWORZONA PRZEZ BIEGACZY</h3>
+        <p>dla Biegaczy Elite Runners Club</p>
+      </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <div class="view w-100">
+        <img class="d-block w-100" src="../../assets/images/intro-image.jpg" alt="WYJĄTKOWE MIEJSCE SPOTKAŃ I ROZWOJU">
+        <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">WYJĄTKOWE MIEJSCE SPOTKAŃ I ROZWOJU</h3>
+        <p>więzi oraz pasji</p>
+      </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+      <div class="view w-100">
+        <img class="d-block w-100" src="../../assets/images/intro-image.jpg" alt="OGÓLNOPOLSKI KLUB ZRZESZAJĄCY ŚWIADOME OSOBY">
+        <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+      </div>
+      <div class="carousel-caption">
+        <h3 class="h3-responsive">OGÓLNOPOLSKI KLUB ZRZESZAJĄCY ŚWIADOME OSOBY</h3>
+        <p>o wspólnych celach i wizjach</p>
+      </div>
+    </mdb-carousel-item>
+  </mdb-carousel>
 </section>
