@@ -18,4 +18,15 @@ export class AppComponent implements OnInit {
     const routeData = routerOutlet.activatedRouteData['animation'];
     return routeData ? routeData : 'rootPage';
   }
+
+  onActivate(event) {
+    const scrollToTop = window.setInterval(() => {
+      const pos = window.pageYOffset;
+      if (pos > 0) {
+        window.scrollTo(0, pos - 8); // Each scroll step.
+      } else {
+        window.clearInterval(scrollToTop);
+      }
+    }, 16);
+  }
 }
