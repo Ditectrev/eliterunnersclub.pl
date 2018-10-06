@@ -21,6 +21,7 @@ import { IndividualTrainingComponent } from './individual-training/individual-tr
 import { MembershipComponent } from './membership/membership.component';
 import { ApplicationsComponent } from './applications/applications.component';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import {MDBBootstrapModule} from 'angular-bootstrap-md';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
@@ -49,7 +51,7 @@ import {MDBBootstrapModule} from 'angular-bootstrap-md';
     MDBBootstrapModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
-  schemas: [ NO_ERRORS_SCHEMA ],
+  schemas: [NO_ERRORS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })
