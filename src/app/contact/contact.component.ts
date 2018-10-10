@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {FormGroup, FormControl, Validators} from '@angular/forms';
+import {IMessage, MailService} from '../shared/mail.service';
 
 @Component({
   selector: 'app-contact',
@@ -26,6 +27,8 @@ export class ContactComponent implements OnInit {
   signupForm: FormGroup;
   submitted: boolean;
 
+  constructor(private mailService: MailService) { }
+
   ngOnInit() {
     // Set up form inputs.
     this.signupForm = new FormGroup({
@@ -40,7 +43,20 @@ export class ContactComponent implements OnInit {
     this.submitted = false;
   }
 
-  onSubmit() {
+  onSubmit(message: IMessage) {
+    this.submitted = true;
 
+    this.mailService.sendEmail(message).subscribe(res => {
+      console.log('After onSubmit success', res);
+      this.signupForm.reset(); // Reset form on submit.
+
+      setTimeout(function () {
+        this.submitted = false;
+      }, 4000);
+    }, error => {
+      console.log('After onSubmit error', error);
+    });
+    console.log(this.signupForm.value.userData.name);
+    console.log(message);
   }
 }

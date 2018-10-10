@@ -22,6 +22,7 @@ import { MembershipComponent } from './membership/membership.component';
 import { ApplicationsComponent } from './applications/applications.component';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MailService} from './shared/mail.service';
 
 
 @NgModule({
@@ -52,7 +53,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     RouterModule.forRoot(appRoutes)
   ],
   schemas: [NO_ERRORS_SCHEMA],
-  providers: [],
+  providers: [MailService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

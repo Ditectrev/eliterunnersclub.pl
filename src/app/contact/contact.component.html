@@ -1,7 +1,7 @@
 <section>
   <div class="container">
     <div class="row" data-aos="fade-up">
-      <div class="col-md-4">
+      <div class="col-md-6">
         <div class="contact-about">
           <h3>{{ title1 }}<br>{{ title2 }}</h3>
           <p>{{ description }}</p>
@@ -11,7 +11,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-4">
+      <div class="col-md-6">
         <div class="info">
           <div>
             <i class="ion-ios-pin-outline"></i>
@@ -27,10 +27,9 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-5 col-md-8">
+      <div class="col-md-12">
         <div class="form">
           <form
-            action="/kontakt"
             [formGroup]="signupForm"
             (ngSubmit)="onSubmit(signupForm.value.userData)"
             role="form"
