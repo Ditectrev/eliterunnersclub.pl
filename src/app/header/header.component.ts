@@ -11,6 +11,7 @@ export class HeaderComponent {
     { 'url': '/korzysci', 'name': 'Korzyści' },
     { 'url': '/aplikacje', 'name': 'Aplikacje' },
     { 'url': '/czlonkostwo', 'name': 'Członkostwo' },
-    { 'url': '/kontakt', 'name': 'Kontakt' }
+    { 'url': '/kontakt', 'name': 'Kontakt' },
+    { 'url': '/dolacz-do-klubu', 'name': 'Dołącz do Klubu' }
   ];
 }

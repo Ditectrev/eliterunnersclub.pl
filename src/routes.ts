@@ -10,6 +10,7 @@ import {RegulationsComponent} from './app/regulations/regulations.component';
 import {ApplicationsComponent} from './app/applications/applications.component';
 import {MembershipComponent} from './app/membership/membership.component';
 import {BenefitsComponent} from './app/benefits/benefits.component';
+import {JoinComponent} from './app/join/join.component';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page1' } },
@@ -21,7 +22,8 @@ export const appRoutes: Routes = [
   { path: 'korzysci', component: BenefitsComponent, data: { animation: 'page7' } },
   { path: 'aplikacje', component: ApplicationsComponent, data: { animation: 'page8' } },
   { path: 'czlonkostwo', component: MembershipComponent, data: { animation: 'page9' } },
-  { path: 'nie-znaleziono', component: ErrorPageComponent, data: { animation: 'page10' } },
+  { path: 'dolacz-do-klubu', component: JoinComponent, data: { animation: 'page10' } },
+  { path: 'nie-znaleziono', component: ErrorPageComponent, data: { animation: 'page11' } },
   // It's important that wildcard route has to be the last element in array of routes, because routes parses from top to bottom.
   { path: '**', // Wildcard path, which means to catch all other routes, not specified above.
     redirectTo: '/nie-znaleziono' // Alternative to component in routes, which redirects to specific path.

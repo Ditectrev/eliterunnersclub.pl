@@ -38,25 +38,6 @@ header {
   }
 }
 
-.pull-right {
-  ul {
-    list-style: none;
-    //position: absolute;
-    //top: 10px;
-    margin-top: -20px;
-    li {
-      display: inline-block;
-      //position: absolute;
-      top: 10px;
-      a {
-        font-family: $accent-font;
-        font-size: 12px;
-        text-transform: capitalize;
-      }
-    }
-  }
-}
-
 .nav-menu {
   &, * {
     list-style: none;
