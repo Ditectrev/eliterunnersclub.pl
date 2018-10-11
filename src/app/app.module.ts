@@ -17,7 +17,6 @@ import { appRoutes } from '../routes';
 import { CookiesComponent } from './cookies/cookies.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { RegulationsComponent } from './regulations/regulations.component';
-import { IndividualTrainingComponent } from './individual-training/individual-training.component';
 import { MembershipComponent } from './membership/membership.component';
 import { ApplicationsComponent } from './applications/applications.component';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
@@ -38,7 +37,6 @@ import {MailService} from './shared/mail.service';
     CookiesComponent,
     PrivacyComponent,
     RegulationsComponent,
-    IndividualTrainingComponent,
     MembershipComponent,
     ApplicationsComponent
   ],
