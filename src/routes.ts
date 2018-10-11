@@ -9,6 +9,7 @@ import {CookiesComponent} from './app/cookies/cookies.component';
 import {RegulationsComponent} from './app/regulations/regulations.component';
 import {ApplicationsComponent} from './app/applications/applications.component';
 import {MembershipComponent} from './app/membership/membership.component';
+import {BenefitsComponent} from './app/benefits/benefits.component';
 
 export const appRoutes: Routes = [
   { path: '', component: HomeComponent, data: { animation: 'page1' } },
@@ -17,6 +18,7 @@ export const appRoutes: Routes = [
   { path: 'kontakt', component: ContactComponent, data: { animation: 'page4' } },
   { path: 'prywatnosc', component: PrivacyComponent, data: { animation: 'page5' } },
   { path: 'regulamin', component: RegulationsComponent, data: { animation: 'page6' } },
+  { path: 'korzysci', component: BenefitsComponent, data: { animation: 'page7' } },
   { path: 'aplikacje', component: ApplicationsComponent, data: { animation: 'page8' } },
   { path: 'czlonkostwo', component: MembershipComponent, data: { animation: 'page9' } },
   { path: 'nie-znaleziono', component: ErrorPageComponent, data: { animation: 'page10' } },

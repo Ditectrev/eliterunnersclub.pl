@@ -1,13 +1,7 @@
 @import "../../scss/style";
 
 section {
-  background: $white;
-  padding: 60px 0 0 0;
-
-  .features-row {
-    padding: 60px 0 30px 0;
-  }
-
+  margin: 100px 20px 0;
   h2 {
     color: darken($golden-dream, 10%);
     margin: 25px 0 25px;
@@ -16,11 +10,7 @@ section {
     color: $golden-dream;
     margin: 20px 0;
   }
-
   p {
-    color: $text-color;
-    line-height: 24px;
-    margin-bottom: 30px;
     text-align: justify;
   }
 }

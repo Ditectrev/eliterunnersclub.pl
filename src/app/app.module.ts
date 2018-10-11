@@ -22,6 +22,7 @@ import { ApplicationsComponent } from './applications/applications.component';
 import {MDBBootstrapModule} from 'angular-bootstrap-md';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MailService} from './shared/mail.service';
+import { BenefitsComponent } from './benefits/benefits.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import {MailService} from './shared/mail.service';
     PrivacyComponent,
     RegulationsComponent,
     MembershipComponent,
-    ApplicationsComponent
+    ApplicationsComponent,
+    BenefitsComponent
   ],
   imports: [
     BrowserModule,
