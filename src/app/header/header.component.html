@@ -19,7 +19,7 @@
           [routerLinkActiveOptions]="{exact: true}"
           *ngFor="let route of routes; let i = index"
         >
-          <a routerLink="{{ route.url }}" role="link">{{ route.name }}</a>
+          <a routerLink="{{ route.url }}" title="{{ route.name }}" role="link">{{ route.name }}</a>
         </li>
       </ul>
     </nav>
