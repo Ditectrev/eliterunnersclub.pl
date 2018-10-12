@@ -44,23 +44,5 @@ export class AboutComponent implements OnInit {
         big: 'assets/images/footer4.jpg'
       }
     ];
-    // this.images = [
-      // new ImageItem('assets/images/footer1.jpg'),
-      // new ImageItem('./assets/images/footer2.jpg'),
-      // new ImageItem('../assets/images/footer3.jpg'),
-      // new ImageItem('assets/images/footer4.jpg')
-    // ]
-    // const galleryRef: GalleryRef = this.gallery.ref(this.galleryId);
-    // this.gallery.addImage({
-    //   src: 'app/assets/images/footer1.jpg',
-    //   thumb: 'app/assets/images/footer1.jpg',
-    //   title: 'Some title'
-    // });
-    // this.images = [
-    //   new ImageItem({src: "app/assets/images/footer1.jpg", thumb: "app/assets/images/footer1.jpg"}),
-    //   new ImageItem({src: "app/assets/images/footer2.jpg", thumb: "app/assets/images/footer2.jpg"}),
-    //   new ImageItem({src: "app/assets/images/footer3.jpg", thumb: "app/assets/images/footer3.jpg"}),
-    //   new ImageItem({src: "app/assets/images/footer4.jpg", thumb: "app/assets/images/footer4.jpg"})
-    // ];
   }
 }
