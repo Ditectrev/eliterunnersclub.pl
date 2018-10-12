@@ -24,6 +24,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MailService} from './shared/mail.service';
 import { BenefitsComponent } from './benefits/benefits.component';
 import { JoinComponent } from './join/join.component';
+import {NgxGalleryModule} from 'ngx-gallery';
 
 
 @NgModule({
@@ -52,6 +53,7 @@ import { JoinComponent } from './join/join.component';
     HttpModule,
     MomentModule,
     MDBBootstrapModule.forRoot(),
+    NgxGalleryModule,
     RouterModule.forRoot(appRoutes)
   ],
   schemas: [NO_ERRORS_SCHEMA],
