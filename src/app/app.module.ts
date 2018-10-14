@@ -24,6 +24,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MailService} from './shared/mail.service';
 import { BenefitsComponent } from './benefits/benefits.component';
 import { JoinComponent } from './join/join.component';
+import { FooterGalleryComponent } from './footer-gallery/footer-gallery.component';
+import { FooterDotsComponent } from './footer-dots/footer-dots.component';
 
 
 @NgModule({
@@ -42,7 +44,9 @@ import { JoinComponent } from './join/join.component';
     MembershipComponent,
     ApplicationsComponent,
     BenefitsComponent,
-    JoinComponent
+    JoinComponent,
+    FooterGalleryComponent,
+    FooterDotsComponent
   ],
   imports: [
     BrowserModule,

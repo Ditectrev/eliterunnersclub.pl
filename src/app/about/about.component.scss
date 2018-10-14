@@ -1,9 +1,7 @@
 @import "../../scss/style";
 
 section {
-  background: $white;
-  padding: 60px 0 0 0;
-
+  margin: 120px 0;
   .features-row {
     padding: 60px 0 30px 0;
   }
@@ -11,7 +9,6 @@ section {
     color: $golden-dream;
     margin: 20px 0;
   }
-
   p {
     color: $text-color;
     line-height: 24px;
@@ -20,45 +17,10 @@ section {
   }
 }
 
-.overlay {
-  background: $woodsmoke;
-  height: 370px;
-  max-width: 100%;
-  h2 {
-    color: $golden-dream;
-    padding-top: 270px;
-    top:300px;
+app-footer-gallery.filter-image1 img {
+  &:first-child {
+    filter: brightness(100%);
+    margin-top: -30px!important;
   }
-  img {
-    display: inline-block;
-    height: 240px;
-    float: left;
-    margin: 0;
-    width: 25%;
-    &:first-child {
-      filter: brightness(50%);
-      margin-top: -30px;
-    }
-  }
-  .dot {
-    background-color: $golden-dream;
-    border-radius: 50%;
-    display: inline-block;
-    height: 20px;
-    margin: 0 10px;
-    text-align: center;
-    width: 20px;
-  }
-}
-
-@media (max-width: 768px) {
-  .overlay {
-    height: 120px;
-    h2 {
-      padding: 0;
-    }
-    img {
-      display: none;
-    }
-  }
+  filter: brightness(50%);
 }

@@ -1,0 +1,11 @@
+@import "../../scss/style";
+
+.dot {
+  background-color: $golden-dream;
+  border-radius: 50%;
+  display: inline-block;
+  height: 20px;
+  margin: 0 10px;
+  text-align: center;
+  width: 20px;
+}

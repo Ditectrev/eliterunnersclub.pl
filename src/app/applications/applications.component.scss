@@ -1,11 +1,7 @@
 @import "../../scss/style";
 
 section {
-  margin: 100px 20px 0;
-  h2 {
-    color: darken($golden-dream, 10%);
-    margin: 25px 0 25px;
-  }
+  margin: 120px 0;
   h3 {
     color: $golden-dream;
     margin: 20px 0;
@@ -31,7 +27,28 @@ section {
       -webkit-text-fill-color: transparent;
     }
   }
-  img {
-    max-width: 100%;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+app-footer-gallery.filter-image3 img {
+  &:first-child + img + img {
+    filter: brightness(100%);
+    margin-top: -30px!important;
+  }
+  filter: brightness(50%);
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
   }
 }

@@ -1,0 +1,16 @@
+@import "../../scss/style";
+
+
+img {
+  display: inline-block;
+  height: 240px;
+  float: left;
+  margin: 0;
+  width: 25%;
+}
+
+@media (max-width: 768px) {
+  img {
+    display: none;
+  }
+}

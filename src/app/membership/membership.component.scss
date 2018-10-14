@@ -2,10 +2,6 @@
 
 section {
   margin: 120px 0;
-  h2 {
-    color: darken($golden-dream, 10%);
-    margin: 25px 0 25px;
-  }
   h3 {
     color: $golden-dream;
     margin: 20px 0;
@@ -52,6 +48,14 @@ section {
       width: 100%;
     }
   }
+}
+
+app-footer-gallery.filter-image4 img {
+  &:last-child {
+    filter: brightness(100%);
+    margin-top: -30px!important;
+  }
+  filter: brightness(50%);
 }
 
 // TODO: Prepare version for mobile (tablet & phones).
