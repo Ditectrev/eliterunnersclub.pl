@@ -1,9 +1,5 @@
 @import "../../scss/style";
 
-section {
-  margin: 120px 0;
-}
-
 ul {
   margin: 0 auto;
   text-align: center;
@@ -14,9 +10,4 @@ ul {
       text-align: center;
     }
   }
-}
-
-h2 {
-  color: darken($golden-dream, 10%);
-  margin: 25px 0 25px;
 }

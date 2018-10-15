@@ -1,42 +1,25 @@
 @import "../../scss/style";
 
-section {
-  margin: 120px 0;
-  h3 {
-    color: $golden-dream;
-    margin: 20px 0;
+i {
+  color: $text-color;
+  float: left;
+  font-size: 38px;
+  line-height: 1;
+  margin-top: -10px;
+  padding-right: 15px;
+  transition: .5s;
+  &:before {
+    background: $golden-dream;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-  p {
-    color: $text-color;
-    line-height: 24px;
-    margin-bottom: 30px;
-    text-align: justify;
-  }
-  i {
-    color: $text-color;
-    float: left;
-    font-size: 38px;
-    line-height: 1;
-    margin-top: -10px;
-    padding-right: 15px;
-    transition: .5s;
-    &:before {
-      background: $golden-dream;
-      background-clip: border-box;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-}
-
-h2 {
-  font-size: 28px;
 }
 
 app-footer-gallery.filter-image3 img {
   &:first-child + img + img {
     filter: brightness(100%);
-    margin-top: -30px!important;
+    margin-top: -30px !important;
   }
   filter: brightness(50%);
 }
