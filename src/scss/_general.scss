@@ -18,6 +18,9 @@ a {
     text-decoration: none;
   }
 }
+h2 {
+  font-size: 24px;
+}
 h3 {
   color: $golden-dream;
   margin: 20px 0;
@@ -26,8 +29,11 @@ p {
   font-family: $text-font;
   line-height: 30px;
   margin-bottom: 30px;
-  padding: 0;
+  padding: 0 20px;
   text-align: justify;
+}
+strong {
+  font-weight: 600;
 }
 .overlay {
   background: $woodsmoke;
