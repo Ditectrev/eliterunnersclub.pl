@@ -9,15 +9,18 @@ export class IntroComponent {
   slides = [
     {
       image: 'assets/images/intro-image1.jpg',
-      title: 'Bieganie to wspaniały świat'
+      title1: 'Bieganie, to wspaniały Świat, który watro poznać.',
+      title2: 'Twórz go razem z nami.'
     },
     {
       image: 'assets/images/intro-image2.jpg',
-      title: 'Bieganie to wspaniały świat'
+      title1: 'Bieganie, to wspaniały Świat, który watro poznać.',
+      title2: 'Twórz go razem z nami.'
     },
     {
       image: 'assets/images/intro-image3.jpg',
-      title: 'Bieganie to wspaniały świat'
+      title1: 'Bieganie, to wspaniały Świat, który watro poznać.',
+      title2: 'Twórz go razem z nami.'
     }
   ]
 }
