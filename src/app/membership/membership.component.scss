@@ -47,6 +47,13 @@ app-footer-gallery.filter-image4 img {
   filter: brightness(50%);
 }
 
+app-footer-dots.filter-dots4 span {
+  &:last-child {
+    filter: brightness(100%);
+  }
+  filter: brightness(50%);
+}
+
 // TODO: Prepare version for mobile (tablet & phones).
 @media (min-width: 768px) {
   .steps {

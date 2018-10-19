@@ -7,3 +7,10 @@ app-footer-gallery.filter-image1 img {
   }
   filter: brightness(50%);
 }
+
+app-footer-dots.filter-dots1 span {
+  &:first-child {
+    filter: brightness(100%);
+  }
+  filter: brightness(50%);
+}
