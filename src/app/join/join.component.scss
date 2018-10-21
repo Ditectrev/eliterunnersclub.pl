@@ -1,17 +1,45 @@
 @import "../../scss/style";
 
-ul {
-  margin: 0 auto;
+h2 {
+  float: right;
+  text-align: justify;
+}
+
+.links {
+  background-image: linear-gradient(
+      110deg,
+      $golden-dream,
+      $golden-dream 50%,
+      $woodsmoke 50%
+  );
+  border-radius: 25px;
+  font-size: 28px;
+  margin: 60px auto;
   text-align: center;
-  li {
+  text-transform: uppercase;
+  max-width: 440px;
+  a {
     display: inline-block;
-    list-style: none;
-    a {
-      text-align: center;
+    max-width: 50%;
+    padding: 0 20px;
+    &:first-child {
+      color: $woodsmoke;
+      &:hover {
+        color: darken($golden-dream, 20%);
+      }
     }
   }
 }
 
 img {
+  display: block;
   max-width: 100%;
+  margin: 0 auto;
 }
+
+@media (max-width: 767px) {
+  .links {
+    font-size: 20px;
+  }
+}
+
