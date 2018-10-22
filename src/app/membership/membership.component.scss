@@ -6,7 +6,7 @@ section {
     float: left;
     font-size: 38px;
     line-height: 1;
-    margin-top: -10px;
+    margin-top: -7px;
     padding-right: 15px;
     transition: .5s;
     &:before {
@@ -16,25 +16,41 @@ section {
       -webkit-text-fill-color: transparent;
     }
   }
-  .steps {
-    //border-radius: 3px;
-    display: flex;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    justify-content: center;
-    line-height: 1;
-    list-style: none;
-    margin: 0 auto;
-    strong {
-      display: block;
-      font-size: 18px;
-      line-height: 1;
+  .images {
+    text-align: center;
+    img {
+      max-width: 100%;
+      &:last-child {
+        border-radius: 20px;
+        width: 300px;
+      }
     }
-    &>li {
-      display: block;
-      height: 60px;
-      position: relative;
-      width: 100%;
+  }
+}
+
+.steps {
+  max-width: 100%;
+  text-align: center;
+  .pair {
+    background-image: linear-gradient(
+        110deg,
+        $golden-dream,
+        $golden-dream 50%,
+        $woodsmoke 50%
+    );
+    border-radius: 25px;
+    display: inline-block;
+    margin: 60px auto;
+    padding: 5px 10px;
+    text-align: center;
+    p {
+      display: inline-block;
+      margin: 0;
+      text-align: center;
+      vertical-align: middle;
+      &:last-child {
+        color: $golden-dream;
+      }
     }
   }
 }
@@ -55,65 +71,9 @@ app-footer-dots.filter-dots4 span {
 }
 
 // TODO: Prepare version for mobile (tablet & phones).
-@media (min-width: 768px) {
-  .steps {
-    & > li {
-      &.third_step {
-        &>span:after {
-          border-left-color: $woodsmoke;
-        }
-      }
-      text-align: center;
-      & > span {
-        &:after {
-          border-width: 34px;
-          border-left-color: $golden-dream;
-          top: -5px;
-          z-index: 1;
-        }
-        &:after,
-        &:before {
-          border: 30px solid transparent;
-          border-left-color: $golden-dream;
-          content: "";
-          display: block;
-          height: 0;
-          left: 0;
-          position: absolute;
-          top: 0;
-          width: 0;
-          z-index: 2;
-        }
-      }
-      &:first-child i, &:last-child i {
-        border: 30px solid transparent;
-        border-left-color: $golden-dream;
-        display: block;
-        left: 0;
-        position: absolute;
-        top: 0;
-      }
-      &:last-child i {
-        border-bottom-color: white;
-        border-left-color: transparent;
-        border-top-color: white;
-        left: auto;
-        right: -30px;
-      }
-    }
-    .first_step, .third_step {
-      background: $golden-dream;
-      color: $woodsmoke;
-    }
-    .second_step, .fourth_step {
-      background: $woodsmoke;
-      color: $golden-dream;
-    }
-    li.first_step, li.third_step + li > span:before {
-      border-left-color: $golden-dream;
-    }
-    li.second_step + li > span:before {
-      border-left-color: $woodsmoke;
-    }
+@media (max-width: 767px) {
+  .steps .pair {
+    display: block;
+
   }
 }
