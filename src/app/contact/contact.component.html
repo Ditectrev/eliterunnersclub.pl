@@ -1,14 +1,109 @@
 <section>
   <div class="container">
     <div class="row" data-aos="fade-up">
+      <!--<div class="col-md-6">-->
+      <!--<div class="contact-about">-->
+      <!--<a routerLink="/" role="link" class="scrollto" title="RunnersElite"><img src="assets/images/logo.png" width="100"></a>-->
+      <!--<div class="social-links">-->
+      <!--<a href="https://www.facebook.com/Elite-Runners-Club-623896761295620/" class="facebook" role="link" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>-->
+      <!--<a href="" class="instagram"><i class="fa fa-instagram"></i></a>-->
+      <!--</div>-->
+      <!--</div>-->
+      <!--</div>-->
       <div class="col-md-6">
-        <div class="contact-about">
-          <h3>{{ title1 }}<br>{{ title2 }}</h3>
-          <p>{{ description }}</p>
-          <div class="social-links">
-            <a href="https://www.facebook.com/Elite-Runners-Club-623896761295620/" class="facebook" role="link" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
-            <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
-          </div>
+        <img src="assets/images/logo.png" width="100">
+        <h3 class="text-center">Kontakt</h3>
+        <div class="form">
+          <form
+            [formGroup]="signupForm"
+            (ngSubmit)="onSubmit(signupForm.value.userData)"
+            role="form"
+            class="contactForm"
+            method="post"
+          >
+            <div formGroupName="userData">
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    id="name"
+                    placeholder="Imię"
+                    formControlName="name"
+                  >
+                  <span
+                    *ngIf="!signupForm.get('userData.name').valid
+                  && signupForm.get('userData.name').touched"
+                    class="help-block failure"
+                  >{{ wrongName }}</span>
+                </div>
+                <div class="form-group col-lg-6">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                    formControlName="email"
+                  >
+                  <span
+                    *ngIf="!signupForm.get('userData.email').valid
+                  && signupForm.get('userData.email').touched"
+                    class="help-block failure"
+                  >{{ wrongEmail }}</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  id="subject"
+                  placeholder="Temat"
+                  formControlName="subject"
+                >
+                <span
+                  *ngIf="!signupForm.get('userData.subject').valid
+                && signupForm.get('userData.subject').touched"
+                  class="help-block failure"
+                >{{ wrongSubject }}</span>
+              </div>
+              <div class="form-group">
+              <textarea
+                type="text"
+                name="message"
+                class="form-control"
+                id="message"
+                placeholder="Wiadomość"
+                formControlName="message"
+              ></textarea>
+                <span
+                  *ngIf="!signupForm.get('userData.message').valid
+                && signupForm.get('userData.message').touched"
+                  class="help-block failure"
+                >{{ wrongMessage }}</span>
+              </div>
+              <div class="text-center">
+                <button
+                  type="submit"
+                  role="button"
+                  title="Wyślij wiadomość"
+                  [disabled]="!signupForm.valid"
+                >{{ sendMessage }}
+                </button>
+                <span
+                  *ngIf="!signupForm.valid && signupForm.touched"
+                  class="help-block failure"
+                >{{ wrongForm }}</span>
+                <span
+                  *ngIf="signupForm.valid && signupForm.touched"
+                  class="help-block success"
+                  style="color: green;"
+                >{{ sentMessage }}</span>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
       <div class="col-md-6">
@@ -25,99 +120,14 @@
             <i class="ion-ios-call-outline"></i>
             <p>{{ phone }}</p>
           </div>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <div class="form">
-          <form
-            [formGroup]="signupForm"
-            (ngSubmit)="onSubmit(signupForm.value.userData)"
-            role="form"
-            class="contactForm"
-            method="post"
-          >
-            <div formGroupName="userData">
-            <div class="form-row">
-              <div class="form-group col-lg-6">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  id="name"
-                  placeholder="Imię"
-                  formControlName="name"
-                >
-                <span
-                  *ngIf="!signupForm.get('userData.name').valid
-                  && signupForm.get('userData.name').touched"
-                  class="help-block failure"
-                >{{ wrongName }}</span>
-              </div>
-              <div class="form-group col-lg-6">
-                <input
-                  type="email"
-                  name="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email"
-                  formControlName="email"
-                >
-                <span
-                  *ngIf="!signupForm.get('userData.email').valid
-                  && signupForm.get('userData.email').touched"
-                  class="help-block failure"
-                >{{ wrongEmail }}</span>
-              </div>
-            </div>
-            <div class="form-group">
-              <input
-                type="text"
-                name="subject"
-                class="form-control"
-                id="subject"
-                placeholder="Temat"
-                formControlName="subject"
-              >
-              <span
-                *ngIf="!signupForm.get('userData.subject').valid
-                && signupForm.get('userData.subject').touched"
-                class="help-block failure"
-              >{{ wrongSubject }}</span>
-            </div>
-            <div class="form-group">
-              <textarea
-                type="text"
-                name="message"
-                class="form-control"
-                id="message"
-                placeholder="Wiadomość"
-                formControlName="message"
-              ></textarea>
-              <span
-                *ngIf="!signupForm.get('userData.message').valid
-                && signupForm.get('userData.message').touched"
-                class="help-block failure"
-              >{{ wrongMessage }}</span>
-            </div>
-            <div class="text-center">
-              <button
-                type="submit"
-                role="button"
-                title="Wyślij wiadomość"
-                [disabled]="!signupForm.valid"
-              >{{ sendMessage }}</button>
-              <span
-                *ngIf="!signupForm.valid && signupForm.touched"
-                class="help-block failure"
-              >{{ wrongForm }}</span>
-              <span
-                *ngIf="signupForm.valid && signupForm.touched"
-                class="help-block success"
-                style="color: green;"
-              >{{ sentMessage }}</span>
-            </div>
-            </div>
-          </form>
+          <div>
+            <i class="ion-ios-cash-outline"></i>
+            <p>{{ cash }}</p>
+          </div>
+          <div>
+            <i class="ion-ios-information-circle-outline"></i>
+            <p>{{ bank }}</p>
+          </div>
         </div>
       </div>
     </div>

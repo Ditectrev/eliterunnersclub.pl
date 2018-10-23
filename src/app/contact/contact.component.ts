@@ -8,9 +8,8 @@ import {IMessage, MailService} from '../shared/mail.service';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  title1 = 'EliteRunners';
-  title2 = 'Club';
-  description = 'Pierwszy w Polsce e-klub biegowy w formie platformy do wspólnego realizowania planów treningowych, wymiany doświadczeń oraz wspólnych startów biegowych.';
+  bank = 'Nazwa banku: BGŻ BNP PARIBAS';
+  cash = 'Numer rachunku: 53 1600 1462 1814 4353 8000 0001';
   street = 'ul. Boguszyce 139';
   city = '56-400 Oleśnica';
   mail = 'kontakt@eliterunnersclub.pl';
