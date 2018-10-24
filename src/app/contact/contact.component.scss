@@ -1,6 +1,9 @@
 @import "../../scss/style";
 
 section {
+  .col-md-6 {
+    margin-top: 30px;
+  }
   img {
     display: block;
     margin: 0 auto;
@@ -8,8 +11,6 @@ section {
   }
 
   .social-links {
-    padding-bottom: 20px;
-
     a {
       background: #ffffff;
       border: 1px solid $golden-dream;
@@ -33,18 +34,19 @@ section {
 
   .info {
     color: $heading-color;
+    margin-bottom: 130px;
 
     i {
       color: $golden-dream;
       float: left;
       font-size: 32px;
-      line-height: 1;
+      line-height: 18px;
     }
 
     p {
       font-size: 14px;
-      line-height: 28px;
-      padding: 0 0 10px 42px;
+      line-height: 32px;
+      padding: 0 0 2px 42px;
     }
   }
 
