@@ -10,8 +10,8 @@ import {IMessage, MailService} from '../shared/mail.service';
 export class ContactComponent implements OnInit {
   bank = 'Nazwa banku: BGŻ BNP PARIBAS';
   cash = 'Numer rachunku: 53 1600 1462 1814 4353 8000 0001';
-  street = 'ul. Boguszyce 139';
-  city = '56-400 Oleśnica';
+  street = 'ul. Przedwiośnie 45/1';
+  city = '51-211 Wrocław';
   mail = 'kontakt@eliterunnersclub.pl';
   phone = '+48 690 422 543';
 
