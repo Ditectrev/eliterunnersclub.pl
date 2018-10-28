@@ -13,6 +13,7 @@ export class ContactComponent implements OnInit {
   street = 'ul. Przedwiośnie 45/1';
   city = '51-211 Wrocław';
   mail = 'kontakt@eliterunnersclub.pl';
+  name = 'ELITE RUNNERS CLUB';
   phone = '+48 690 422 543';
 
   wrongName = 'Wpisz swoje imię';
