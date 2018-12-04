@@ -8,9 +8,7 @@ import { Component } from '@angular/core';
 export class IntroComponent {
   slides = [
     {
-      image: 'assets/images/intro-image1.jpg',
-      title1: 'Bieganie, to wspaniały Świat, który watro poznać.',
-      title2: 'Twórz go razem z nami.'
+      image: 'assets/images/intro-image1.jpg'
     },
     {
       image: 'assets/images/intro-image2.jpg',
