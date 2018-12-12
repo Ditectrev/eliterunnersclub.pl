@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  navbarOpen = false;
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
   routes = [
     { 'url': '/o-klubie', 'name': 'O klubie' },
     { 'url': '/korzysci', 'name': 'Korzyści' },

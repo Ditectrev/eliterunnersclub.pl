@@ -11,3 +11,9 @@ h3 {
 mdb-carousel img {
   height: 100vh;
 }
+
+@media (max-width: 991px) {
+  .carousel-caption {
+    display: none;
+  }
+}

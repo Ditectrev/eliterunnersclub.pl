@@ -1,22 +1,29 @@
 <header>
   <div class="container">
     <div id="logo" class="pull-left">
-      <h1>
-        <a routerLink="/" role="link" title="RunnersElite"><img src="assets/images/logo.png" width="100"></a>
-      </h1>
+    <a routerLink="/" role="link" title="Elite Runners Club"><img src="assets/images/logo.png" alt="Elite Runners Club"></a>
     </div>
-    <nav id="nav-menu-container">
-      <ul class="nav-menu">
-        <!-- TODO: Fix it. -->
-        <ul class="menu-active"><a routerLink="/" role="link" title="Strona główna">Strona główna</a></ul>
-        <li
-          routerLinkActive="menu-active"
-          [routerLinkActiveOptions]="{exact: true}"
-          *ngFor="let route of routes; let i = index"
-        >
-          <a routerLink="{{ route.url }}" title="{{ route.name }}" role="link">{{ route.name }}</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+        <ul class="nav-menu">
+          <ul class="menu-active"><a routerLink="/" role="link" title="Strona główna">Strona główna</a></ul>
+          <li
+            routerLinkActive="menu-active"
+            [routerLinkActiveOptions]="{exact: true}"
+            *ngFor="let route of routes; let i = index"
+          >
+            <a
+              routerLink="{{ route.url }}"
+              title="{{ route.name }}"
+              role="link"
+            >{{ route.name }}
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </div>
 </header>

@@ -15,27 +15,12 @@ header {
 
   #logo {
     float: left;
-
-    h1 {
-      display: inline-block;
-      font-family: $accent-font;
-      font-size: 36px;
-      font-weight: 300;
-      letter-spacing: 3px;
-      line-height: 1;
-      margin: -4px 0 0 0;
-      padding: 0;
-      text-transform: uppercase;
-    }
-
-    h1 a, h1 a:hover {
-      color: #ffffff;
-    }
-
+    margin-top: -35px;
+    padding: 10px 0;
     img {
-      padding: 10px 0;
-      margin: -30px 0 0;
+      width: 100px;
     }
+    z-index: 321000!important;
   }
 }
 
@@ -82,7 +67,6 @@ header {
   }
 
   a {
-    //color: #ffffff;
     display: inline-block;
     font-family: $accent-font;
     font-size: 14px;
@@ -104,21 +88,60 @@ header {
   }
 }
 
-#nav-menu-container {
+nav {
   float: right;
   margin: 0;
 }
 
-@media (max-width: 768px) {
-  #logo {
-    h1 {
-      font-size: 20px;
-      margin-top: 0;
+@media (max-width: 991px) {
+  .container {
+    max-width: 100%;
+  }
+  .navbar {
+    box-shadow: none;
+  }
+  .collapse.navbar-collapse.show {
+    margin-left: -31px;
+    margin-top: 37px;
+    .nav-menu {
+      background-color: $woodsmoke;
+      margin-left: -100px;
+      li {
+        float: none;
+        &:last-child {
+          border: none;
+        }
+        a {
+          font-size: 20px;
+          padding: 18px 18px 20px 18px;
+        }
+      }
     }
   }
-
-  #nav-menu-container {
-    display: none;
+  nav.navbar.navbar-expand-lg.navbar-dark {
+    margin-left: 100px;
+    position: absolute;
+    width: 100%;
+    button.navbar-toggler {
+      margin-left: 75%;
+    }
   }
 }
-// TODO: Add mobile styling.
+
+@media (max-width: 700px) {
+  nav.navbar.navbar-expand-lg.navbar-dark button.navbar-toggler {
+    margin-left: 65%;
+  }
+}
+
+@media (max-width: 500px) {
+  nav.navbar.navbar-expand-lg.navbar-dark button.navbar-toggler {
+    margin-left: 55%;
+  }
+}
+
+@media (max-width: 380px) {
+  nav.navbar.navbar-expand-lg.navbar-dark button.navbar-toggler {
+    margin-left: 40%;
+  }
+}
