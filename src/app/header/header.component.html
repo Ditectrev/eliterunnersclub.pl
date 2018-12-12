@@ -19,6 +19,7 @@
               routerLink="{{ route.url }}"
               title="{{ route.name }}"
               role="link"
+              (click)="hideNavbar()"
             >{{ route.name }}
             </a>
           </li>

@@ -10,6 +10,9 @@ export class HeaderComponent {
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
+  hideNavbar() {
+    this.navbarOpen = false;
+  }
   routes = [
     { 'url': '/o-klubie', 'name': 'O klubie' },
     { 'url': '/korzysci', 'name': 'Korzyści' },
