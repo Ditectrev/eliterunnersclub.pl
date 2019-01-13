@@ -16,4 +16,9 @@ mdb-carousel img {
   .carousel-caption {
     display: none;
   }
+
+  mdb-carousel img {
+    height: 80vh;
+    top: 20px;
+  }
 }
