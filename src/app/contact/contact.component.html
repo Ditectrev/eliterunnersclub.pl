@@ -96,7 +96,7 @@
                   class="help-block failure"
                 >{{ wrongForm }}</span>
                 <span
-                  *ngIf="signupForm.valid && signupForm.touched"
+                  *ngIf="signupForm.valid && this.submitted"
                   class="help-block success"
                   style="color: green;"
                 >{{ sentMessage }}</span>

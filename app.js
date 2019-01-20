@@ -55,7 +55,7 @@ app.post('/kontakt', (req, res) => {
 // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
-      return console.log(error);
+      // return console.log(error);
       res.render('kontakt', {msg: 'Email nie został wysłany'});
     }
     res.render('kontakt', {msg: 'E-mail został wysłany'});

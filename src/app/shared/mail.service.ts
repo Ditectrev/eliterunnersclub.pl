@@ -20,11 +20,11 @@ export class MailService {
   sendEmail(message: IMessage): Observable<IMessage> | any {
     return this.http.post(this.emailUrl, message)
       .map(response => {
-        console.log('Email sent: mail.service');
+        // console.log('Email sent: mail.service');
         return response;
       })
       .catch(error => {
-        console.log('Email was not send, error', error);
+        // console.log('Email was not send, error', error);
         return Observable.throw(error);
       })
   }
